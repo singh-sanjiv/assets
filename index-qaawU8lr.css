@@ -1,0 +1,1120 @@
+@import"https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html body {
+    width: 100%;
+    height: 100%;
+    font-family: Playfair Display, serif
+}
+
+@media screen and (max-device-width: 640px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box
+    }
+
+    html body {
+        width: 100%;
+        height: 100%;
+        font-family: Playfair Display, serif
+    }
+
+    nav {
+        height: 4rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        background-color: transparent;
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px)
+    }
+
+    nav .logo {
+        width: 80px
+    }
+
+    nav>.nav-details ul li {
+        display: none
+    }
+
+    nav .sign-in .btn {
+        font-size: 15px;
+        padding: 0
+    }
+
+    .page1 {
+        margin-top: 80px !important
+    }
+
+    .page1 .heading {
+        top: 0% !important
+    }
+
+    .page1 .heading .left h1 {
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 0
+    }
+
+    .page1 .heading p {
+        width: 100%;
+        font-size: 8px;
+        line-height: 10px;
+        margin-bottom: 0
+    }
+
+    .page1 .heading .btns {
+        margin: 10px 0
+    }
+
+    .page1 .heading .btns button {
+        font-size: 7px;
+        width: max-content;
+        height: 22px;
+        padding: 5px
+    }
+
+    .page1 .heading .btns button svg {
+        width: 13px
+    }
+
+    .page1 .heading .right img {
+        width: 10rem
+    }
+
+    .about h1 {
+        font-size: 40px !important;
+        text-shadow: red 2px 5px
+    }
+
+    .about {
+        flex-direction: column
+    }
+
+    .about>.cards {
+        padding: 5px !important;
+        flex-direction: column !important
+    }
+
+    .about .cards>.about-details {
+        width: 100% !important;
+        flex-direction: column
+    }
+
+    .about .cards>.about-img {
+        width: 100% !important
+    }
+
+    .page2 h1 {
+        font-size: 35px !important;
+        text-shadow: red 2px 5px
+    }
+
+    .page3 .cards {
+        width: 100%;
+        flex-direction: column;
+        margin: 10px
+    }
+
+    .gallery {
+        min-height: 60vh !important
+    }
+
+    .gallery .container {
+        margin-top: 10px !important;
+        margin-bottom: 80px !important;
+        width: 100% !important
+    }
+
+    .page5 {
+        min-height: 80vh !important
+    }
+
+    .page5 .section .right img {
+        width: 100%
+    }
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #011520;
+    font-family: serif
+}
+
+nav .logo {
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+nav .logo img {
+    width: 100%
+}
+
+nav .nav-details {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d6d3d3;
+    border-radius: 20px
+}
+
+nav .nav-details ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0
+}
+
+nav .nav-details ul li {
+    margin: 10px 15px;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 600
+}
+
+.nav-details ul li:hover {
+    color: #6a6a6a;
+    cursor: pointer;
+    border-bottom: 1px solid black
+}
+
+.sign-in a {
+    background-color: transparent
+}
+
+.page1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: relative
+}
+
+.page1 img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -99
+}
+
+.page1 .heading {
+    position: absolute;
+    top: 13%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.page1 .heading .left {
+    width: 50%;
+    display: flex;
+    margin: 0 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start
+}
+
+.heading h1 {
+    font-size: 43px;
+    line-height: 70px;
+    font-family: Playfair Display, serif;
+    font-family: Edu NSW ACT Foundation;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal
+}
+
+.heading p {
+    width: 90%;
+    font-size: 25px;
+    line-height: 40px;
+    font-family: Playfair Display, serif
+}
+
+.heading .btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px
+}
+
+.heading .btns .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 45px;
+    background-color: #006aff;
+    color: #fff
+}
+
+.btns>a {
+    background: transparent;
+    padding: 0;
+    text-transform: 0;
+    font-size: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-decoration: none;
+    border-radius: none;
+    box-shadow: none
+}
+
+.heading .btns .btn:hover {
+    background-color: #0158d1;
+    color: #fff
+}
+
+.heading .right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.heading .right img {
+    width: 30rem;
+    position: absolute;
+    top: 0%;
+    right: 2%;
+    transform: translateY(-50%)
+}
+
+.right:nth-child(1) {
+    z-index: 2
+}
+
+.right:nth-child(2) {
+    z-index: 2
+}
+
+.right:nth-child(3) {
+    z-index: 6
+}
+
+.right:nth-child(4) {
+    z-index: 7
+}
+
+.right:nth-child(5) {
+    z-index: 8
+}
+
+.about {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #080909;
+    color: #fff
+}
+
+.about h1 {
+    margin: 20px;
+    font-size: 50px;
+    text-shadow: red 2px 5px;
+    font-family: Edu NSW ACT Foundation;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal
+}
+
+.about>.cards {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    padding: 20px;
+    color: #000;
+    background-color: #eae8e8
+}
+
+.about>.cards ul li {
+    list-style: none;
+    font-size: 18px
+}
+
+.about>.cards .about-details {
+    width: 80%
+}
+
+.about>.cards>.about-img {
+    box-shadow: 1px 1px 15px 2px #000;
+    width: 20%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.about>.cards>.about-img img {
+    width: 100%;
+    margin: 10px
+}
+
+.page2 {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f9fa;
+    position: relative
+}
+
+.page2 h1 {
+    margin: 20px;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: #41b3d3 2px 3px;
+    font-family: Edu NSW ACT Foundation;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal
+}
+
+.page2 .cards {
+    width: 90%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #eee;
+    margin: 10px;
+    box-shadow: 1px 1px 15px 2px #000
+}
+
+.page3 {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.page3 h1 {
+    margin: 20px;
+    font-size: 50px;
+    text-shadow: #41b3d3 2px 5px;
+    font-family: Edu NSW ACT Foundation;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal
+}
+
+.page3 .cards {
+    width: 97%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between
+}
+
+.page3 .cards:last-child {
+    width: 70%
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 190px;
+    height: 254px;
+    perspective: 1000px;
+    font-family: sans-serif
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform .8s;
+    transform-style: preserve-3d
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg)
+}
+
+.flip-card-front,
+.flip-card-back {
+    box-shadow: 0 8px 14px #0003;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid coral;
+    border-radius: 1rem
+}
+
+.flip-card-front {
+    background: linear-gradient(120deg, bisque 60%, #ffe7de 88%, #ffd3c3 40%, #ff7f509a 48%);
+    color: coral
+}
+
+.flip-card-back {
+    background: linear-gradient(120deg, #ffae91 30%, coral 88%, bisque 40%, #ffb9a0 78%);
+    color: #fff;
+    transform: rotateY(180deg)
+}
+
+.team-icon {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer
+}
+
+.team-icon a {
+    background-color: transparent
+}
+
+section {
+    padding: 35px 0
+}
+
+html,
+body {
+    overflow-x: hidden
+}
+
+body {
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 400;
+    background-color: #eee
+}
+
+h1 {
+    font-size: 200%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400
+}
+
+header {
+    background: #3f51b5;
+    color: #fff;
+    padding: 150px 0
+}
+
+header p {
+    font-family: Allura;
+    color: #fff3;
+    margin-bottom: 0;
+    font-size: 60px;
+    margin-top: -30px
+}
+
+.journey {
+    margin-top: 10px;
+    border-top: 3px solid black
+}
+
+.journey h1 {
+    margin: 10px;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: #41b3d3 2px 5px;
+    font-family: Edu NSW ACT Foundation;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal
+}
+
+.timeline {
+    position: relative
+}
+
+.timeline:before {
+    content: "";
+    background: #c5cae9;
+    width: 5px;
+    height: 95%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%)
+}
+
+.timeline-item {
+    width: 100%;
+    margin-bottom: 70px
+}
+
+.timeline-item:nth-child(2n) .timeline-content {
+    float: right;
+    padding: 40px 30px 10px
+}
+
+.timeline-item:nth-child(2n) .timeline-content .date {
+    right: auto;
+    left: 0
+}
+
+.timeline-item:nth-child(2n) .timeline-content:after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 30px;
+    left: -15px;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #f5f5f5 transparent transparent
+}
+
+.timeline-item:after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+.timeline-content {
+    position: relative;
+    width: 45%;
+    padding: 10px 30px;
+    border-radius: 4px;
+    background: #f5f5f5;
+    box-shadow: 0 20px 25px -15px #0000004d
+}
+
+.timeline-content:after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 30px;
+    right: -15px;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent #f5f5f5
+}
+
+.timeline-img {
+    width: 30px;
+    height: 30px;
+    background: #3f51b5;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    margin-top: 25px;
+    margin-left: -15px
+}
+
+a {
+    background: #3f51b5;
+    color: #fff;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px -1px #0009
+}
+
+a:hover,
+a:active,
+a:focus {
+    background: darken(#3F51B5, 10%);
+    color: #fff;
+    text-decoration: none
+}
+
+.timeline-card {
+    padding: 0 !important
+}
+
+.timeline-card p {
+    padding: 0 20px
+}
+
+.timeline-card a {
+    margin-left: 20px
+}
+
+.timeline-item .timeline-img-header1 {
+    height: 18rem;
+    background: linear-gradient(#0000, #0006), url(/images/journey/1.jpg) center center no-repeat;
+    background-size: cover
+}
+
+.timeline-item .timeline-img-header2 {
+    width: 100%;
+    height: 18rem;
+    background: linear-gradient(#0000, #0006), url(/images/journey/2.jpg) center center no-repeat;
+    background-size: cover
+}
+
+.timeline-item .timeline-img-header3 {
+    width: 100%;
+    height: 18rem;
+    background: linear-gradient(#0000, #0006), url(/images/journey/3.jpg) center center no-repeat;
+    background-size: cover
+}
+
+.timeline-item .timeline-img-header4 {
+    width: 100%;
+    height: 18rem;
+    background: linear-gradient(#0000, #0006), url(/images/journey/4.jpg) center top no-repeat;
+    background-size: cover
+}
+
+.timeline-item .timeline-img-header5 {
+    width: 100%;
+    height: 18rem;
+    background: linear-gradient(#0000, #0006), url(/images/journey/5.jpg) center center no-repeat;
+    background-size: cover
+}
+
+.timeline-item .timeline-img-header6 {
+    width: 100%;
+    height: 18rem;
+    background: linear-gradient(#0000, #0006), url(/images/journey/6.jpg) center center no-repeat;
+    background-size: cover
+}
+
+.timeline-item .timeline-img-header7 {
+    width: 100%;
+    height: 18rem;
+    background: linear-gradient(#0000, #0006), url(/images/journey/7.jpg) center top no-repeat;
+    background-size: cover
+}
+
+.timeline-item .timeline-img-header8 {
+    width: 100%;
+    height: 18rem;
+    background: linear-gradient(#0000, #0006), url(/images/journey/8.jpg) center top no-repeat;
+    overflow-y: scroll;
+    background-size: cover
+}
+
+.timeline-item .timeline-img-header9 {
+    width: 100%;
+    height: 18rem;
+    background: linear-gradient(#0000, #0006), url(/images/journey/9.jpg) center top no-repeat;
+    overflow-y: scroll;
+    background-size: cover
+}
+
+.timeline-img-header {
+    height: 200px;
+    position: relative;
+    margin-bottom: 20px
+}
+
+.timeline-img-header h2 {
+    color: #000;
+    position: absolute;
+    bottom: 5px;
+    left: 20px
+}
+
+blockquote {
+    margin-top: 30px;
+    color: #757575;
+    border-left-color: #3f51b5;
+    padding: 0 20px
+}
+
+.date {
+    background: #ff4081;
+    display: inline-block;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+@media screen and (max-width: 768px) {
+    .timeline:before {
+        left: 50px
+    }
+
+    .timeline .timeline-img {
+        left: 50px
+    }
+
+    .timeline .timeline-content {
+        max-width: 100%;
+        width: auto;
+        margin-left: 70px
+    }
+
+    .timeline .timeline-item:nth-child(2n) .timeline-content {
+        float: none
+    }
+
+    .timeline .timeline-item:nth-child(odd) .timeline-content:after {
+        content: "";
+        position: absolute;
+        border-style: solid;
+        width: 0;
+        height: 0;
+        top: 30px;
+        left: -15px;
+        border-width: 10px 15px 10px 0;
+        border-color: transparent #f5f5f5 transparent transparent
+    }
+}
+
+.page4 {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #101114;
+    color: #fff
+}
+
+.page4 h1 {
+    margin: 20px;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: red 2px 5px;
+    font-family: Edu NSW ACT Foundation;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal
+}
+
+.page4 .section {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative
+}
+
+.page4 .section .left {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.page4 .section .right {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.page4 .section .right img {
+    width: 50%;
+    filter: drop-shadow(#41b3d3 2px 5px)
+}
+
+.page5 {
+    width: 100%;
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative
+}
+
+.page5 .container {
+    min-height: 50vh;
+    position: absolute;
+    top: -50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border: 1px solid black;
+    background-color: #fff;
+    box-shadow: 0 5px 40px 1px #000
+}
+
+.container h1 {
+    font-size: 50px;
+    text-align: center;
+    text-shadow: #41b3d3 2px 5px;
+    font-family: Edu NSW ACT Foundation;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal
+}
+
+.container p {
+    width: 90%;
+    font-size: 20px
+}
+
+.container>a {
+    background: transparent;
+    padding: 0;
+    text-transform: 0;
+    font-size: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-decoration: none;
+    border-radius: none;
+    box-shadow: none
+}
+
+.gallery {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #080909;
+    color: #fff
+}
+
+.gallery h1 {
+    margin: 20px;
+    font-size: 50px;
+    text-shadow: red 2px 5px;
+    font-family: Edu NSW ACT Foundation;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal
+}
+
+.gallery>.container {
+    display: flex;
+    margin: 70px;
+    align-items: center;
+    position: relative;
+    justify-content: center
+}
+
+.gallery .container .carousel-item img {
+    aspect-ratio: 16/9;
+    object-fit: cover
+}
+
+.gallery .container .card {
+    height: max-content;
+    padding: 50px
+}
+
+* {
+    font-family: Open Sans
+}
+
+.footer-distributed {
+    background-color: #101114;
+    box-shadow: 0 1px 1px #0000001f;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: 700 16px sans-serif;
+    padding: 55px 50px;
+    position: relative
+}
+
+.footer-distributed a {
+    background: none
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top
+}
+
+.footer-distributed .footer-left {
+    width: 40%
+}
+
+.footer-distributed h3 {
+    color: #fff;
+    font: 36px Open Sans, cursive;
+    margin: 0
+}
+
+.footer-distributed h3 span {
+    color: #20b2aa
+}
+
+.footer-distributed .footer-links {
+    color: #fff;
+    margin: 20px 0 12px;
+    padding: 0
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    font-weight: 400;
+    text-decoration: none;
+    color: inherit
+}
+
+.footer-distributed .footer-company-name {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0
+}
+
+.footer-distributed .footer-center {
+    width: 35%
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #fff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    vertical-align: middle;
+    margin: 0
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2
+}
+
+.footer-distributed .footer-center p a {
+    color: #20b2aa;
+    text-decoration: none
+}
+
+.footer-distributed .footer-links a:before {
+    content: "|";
+    font-weight: 300;
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px
+}
+
+.footer-distributed .footer-links .link-1:before {
+    content: none
+}
+
+.footer-distributed .footer-right {
+    width: 20%
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px
+}
+
+.footer-distributed .footer-icons a {
+    display: inline;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin-right: 3px;
+    margin-bottom: 5px
+}
+
+@media (max-width: 880px) {
+    .footer-distributed {
+        font: 700 14px sans-serif
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center
+    }
+
+    .footer-distributed .footer-center i {
+        margin-left: 0
+    }
+}
+
+.footerdown {
+    width: 100%;
+    color: #fff;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
